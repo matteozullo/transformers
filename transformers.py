@@ -385,5 +385,5 @@ class classifier:
             directory.cleanup()
 
 # train
-BERT = classifier('data.csv', 'labels.csv', model_type = 'xlnet', model_name = 'xlnet-base-cased', cols = ['id','text','Positive'])
-BERT.main(EP = 1, seed_model = True, seed_set = True, prop_test = 0.15, prop_validation = 0.15, optimal_lr = False)
+CLASSIFIER = classifier('data.csv', 'labels.csv', model_type = 'xlnet', model_name = 'xlnet-base-cased', cols = ['id','text','Positive'])
+CLASSIFIER.main(EP = 1, seed_model = True, seed_set = True, prop_test = 0.15, prop_validation = 0.15, optimal_lr = False)
